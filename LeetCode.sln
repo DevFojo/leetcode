@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode", "LeetCode\LeetCode.csproj", "{7C439D36-2858-417A-B025-73DDFE1D0EEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSignal", "CodeSignal\CodeSignal.csproj", "{7089815B-C903-4B14-855B-AE4E12D5CEF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{7C439D36-2858-417A-B025-73DDFE1D0EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C439D36-2858-417A-B025-73DDFE1D0EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C439D36-2858-417A-B025-73DDFE1D0EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7089815B-C903-4B14-855B-AE4E12D5CEF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7089815B-C903-4B14-855B-AE4E12D5CEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7089815B-C903-4B14-855B-AE4E12D5CEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7089815B-C903-4B14-855B-AE4E12D5CEF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
