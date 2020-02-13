@@ -15,7 +15,7 @@ namespace LeetCode
                 return ans;
             }
 
-            for (var i = 0; i < nums.Length; i++)
+            for (var i = 0; i < nums.Length - 2; i++)
             {
                 if (nums[i] > 0)
                 {
@@ -35,8 +35,8 @@ namespace LeetCode
                     if (sum == 0)
                     {
                         ans.Add(new List<int> {nums[i], nums[j], nums[k]});
-                        while (j < nums.Length - 1 && nums[j] == nums[j + 1]) j++;
-                        while (k > 0 && nums[k] == nums[k - 1]) k--;
+                        while (j < k - 1 && nums[j] == nums[j + 1]) j++;
+                        while (j < k && nums[k] == nums[k - 1]) k--;
                         j++;
                         k--;
                     }
