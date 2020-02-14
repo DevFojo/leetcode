@@ -1,7 +1,3 @@
-using System;
-using Xunit;
-using Xunit.Abstractions;
-
 namespace CodeSignal
 {
     public class CountTinyPairs

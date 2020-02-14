@@ -1,6 +1,3 @@
-using System.Text;
-using Xunit;
-
 namespace CodeSignal
 {
     public class RemoveKFromList
