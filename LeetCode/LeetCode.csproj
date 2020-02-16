@@ -13,4 +13,10 @@
         <PackageReference Include="coverlet.collector" Version="1.0.1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="LeetCode.xunit.runner.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
