@@ -10,24 +10,22 @@ namespace LeetCode
             var n = s.Length;
 
             for (var i = 0; i < n; ++i)
+            for (var j = i; j < n; j++)
             {
-                for (var j = i; j < n; j++)
+                var l = j - i + 1;
+                if (l <= maxLength)
                 {
-                    var l = j - i + 1;
-                    if (l <= maxLength)
-                    {
-                        continue;
-                    }
-
-                    var sub = s.Substring(i, l);
-                    if (!IsPalindrome(sub))
-                    {
-                        continue;
-                    }
-
-                    maxLength = l;
-                    maxPalindrome = sub;
+                    continue;
                 }
+
+                var sub = s.Substring(i, l);
+                if (!IsPalindrome(sub))
+                {
+                    continue;
+                }
+
+                maxLength = l;
+                maxPalindrome = sub;
             }
 
             return maxPalindrome;

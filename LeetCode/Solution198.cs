@@ -1,4 +1,5 @@
 using System;
+using Xunit;
 
 namespace LeetCode
 {
@@ -7,7 +8,10 @@ namespace LeetCode
         public int Rob(int[] nums)
         {
             if (nums == null || nums.Length == 0)
+            {
                 return 0;
+            }
+
             var dp = new int[nums.Length];
             for (var i = 0; i < nums.Length; i++)
             {
@@ -26,6 +30,12 @@ namespace LeetCode
             }
 
             return dp[nums.Length - 1];
+        }
+
+        [Fact]
+        public void Test()
+        {
+            Assert.True(true);
         }
     }
 }

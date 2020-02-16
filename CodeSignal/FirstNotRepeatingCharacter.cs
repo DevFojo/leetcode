@@ -5,7 +5,7 @@ namespace CodeSignal
 {
     public class FirstNotRepeatingCharacter
     {
-        char firstNotRepeatingCharacter(string s)
+        public char firstNotRepeatingCharacter(string s)
         {
             var m = new Dictionary<char, List<int>>();
             for (var i = 0; i < s.Length; i++)

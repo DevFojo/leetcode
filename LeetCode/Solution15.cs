@@ -35,8 +35,16 @@ namespace LeetCode
                     if (sum == 0)
                     {
                         ans.Add(new List<int> {nums[i], nums[j], nums[k]});
-                        while (j < k - 1 && nums[j] == nums[j + 1]) j++;
-                        while (j < k && nums[k] == nums[k - 1]) k--;
+                        while (j < k - 1 && nums[j] == nums[j + 1])
+                        {
+                            j++;
+                        }
+
+                        while (j < k && nums[k] == nums[k - 1])
+                        {
+                            k--;
+                        }
+
                         j++;
                         k--;
                     }

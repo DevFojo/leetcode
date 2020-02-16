@@ -2,7 +2,7 @@ namespace CodeSignal
 {
     public class CountTinyPairs
     {
-        int countTinyPairs(int[] a, int[] b, int k)
+        public int countTinyPairs(int[] a, int[] b, int k)
         {
             var tinyCount = 0;
             var n = a.Length;
@@ -12,13 +12,15 @@ namespace CodeSignal
                 var pow10 = getSize(b[j]) + 1;
                 var xy = a[i] * pow(10, pow10) + b[j];
                 if (xy < k)
+                {
                     tinyCount++;
+                }
             }
 
             return tinyCount;
         }
 
-        int getSize(int i)
+        private int getSize(int i)
         {
             var n = 0;
             while (i > 10)
@@ -30,7 +32,7 @@ namespace CodeSignal
             return n;
         }
 
-        int pow(int x, int y)
+        private int pow(int x, int y)
         {
             var ans = 1;
             while (y > 0)

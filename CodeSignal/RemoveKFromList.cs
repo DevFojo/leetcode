@@ -2,7 +2,7 @@ namespace CodeSignal
 {
     public class RemoveKFromList
     {
-        ListNode<int> removeKFromList(ListNode<int> l, int k)
+        public ListNode<int> removeKFromList(ListNode<int> l, int k)
         {
             var head = l;
             ListNode<int> previous = null;
