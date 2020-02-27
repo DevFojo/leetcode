@@ -4,7 +4,7 @@ namespace CodeSignal
 {
     public class IsCryptSolution
     {
-        bool isCryptSolution(string[] crypt, char[][] solution)
+        public bool isCryptSolution(string[] crypt, char[][] solution)
         {
             var d = new Dictionary<char, int>();
             foreach (var ci in solution)
@@ -36,7 +36,7 @@ namespace CodeSignal
             return values[0] + values[1] == values[2];
         }
 
-        int pow(int x, int y)
+        private int pow(int x, int y)
         {
             var ans = 1;
             while (y > 0)

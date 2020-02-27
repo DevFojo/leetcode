@@ -4,7 +4,7 @@ namespace CodeSignal
 {
     public class Sudoku2
     {
-        bool sudoku2(char[][] grid)
+        public bool sudoku2(char[][] grid)
         {
             var subArray = new Dictionary<int, Dictionary<char, char>>();
             var rowMap = new Dictionary<int, Dictionary<char, char>>();
@@ -50,26 +50,53 @@ namespace CodeSignal
             return true;
         }
 
-        int getSubArrayId(int i, int j)
+        private int getSubArrayId(int i, int j)
         {
             if (i < 3 && j < 3)
+            {
                 return 0;
+            }
+
             if (i < 3 && j < 6)
+            {
                 return 1;
+            }
+
             if (i < 3 && j < 9)
+            {
                 return 2;
+            }
+
             if (i < 6 && j < 3)
+            {
                 return 3;
+            }
+
             if (i < 6 && j < 6)
+            {
                 return 4;
+            }
+
             if (i < 6 && j < 9)
+            {
                 return 5;
+            }
+
             if (i < 9 && j < 3)
+            {
                 return 6;
+            }
+
             if (i < 9 && j < 6)
+            {
                 return 7;
+            }
+
             if (i < 9 && j < 9)
+            {
                 return 8;
+            }
+
             return -1;
         }
     }

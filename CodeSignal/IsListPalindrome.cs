@@ -4,7 +4,7 @@ namespace CodeSignal
 {
     public class IsListPalindrome
     {
-        bool isListPalindrome(ListNode<int> l)
+        public bool isListPalindrome(ListNode<int> l)
         {
             var s = new Stack<int>();
             var c = l;

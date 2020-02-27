@@ -1,11 +1,10 @@
-using System.Collections.Generic;
 using System.Text;
 
 namespace CodeSignal
 {
     public class MergeStrings
     {
-        string mergeStrings(string s1, string s2)
+        public string mergeStrings(string s1, string s2)
         {
             var s1i = 0;
             var s2i = 0;

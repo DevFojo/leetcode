@@ -12,7 +12,9 @@ namespace LeetCode
             for (var i = 0; i < n; i += 2)
             {
                 if (i % 2 == 0)
+                {
                     sum += nums[i];
+                }
             }
 
             return sum;
